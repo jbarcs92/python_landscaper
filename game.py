@@ -100,6 +100,9 @@ while current_tool == 'team':
         print(f'Your cash total is ${cash_total}')
     if phrase == 'no':
         print(f'Your cash total is ${cash_total}')
+
+if current_tool == 'team' and cash_total >= 1000:
+    print (f"Congrats! You've won the game")
     
 
 
