@@ -1,32 +1,3 @@
-teeth = {
-    'tool': 'teeth',
-    'pay': 1,
-    'value': 0
-}
-
-scissors = {
-    'tool': 'rusty scissors',
-    'pay': 5,
-    'value': 5
-}
-
-old_lawnmower = {
-    'tool': 'old lawnmower',
-    'pay': 50,
-    'value': 25
-}
-
-battery_lawnmower = {
-    'tool': 'battery lawnmower',
-    'pay': 100,
-    'value':  250
-}
-
-students = {
-    'tool': 'students',
-    'pay': 250,
-    'value': 500
-}
 
 cash_total = 0
 
@@ -100,9 +71,11 @@ while current_tool == 'team':
         print(f'Your cash total is ${cash_total}')
     if phrase == 'no':
         print(f'Your cash total is ${cash_total}')
+    if cash_total >= 1000:
+        print (f"Congrats! You've won the game")
+        break
 
-if current_tool == 'team' and cash_total >= 1000:
-    print (f"Congrats! You've won the game")
+
     
 
 
