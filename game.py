@@ -30,7 +30,7 @@ students = {
 
 cash_total = 0
 
-current_tool = ''
+current_tool = 'teeth'
 
 
 while cash_total < 5:
@@ -41,12 +41,20 @@ while cash_total < 5:
     if phrase == 'no' and cash_total < 5:
         print(f'Your cash total is ${cash_total}')
 
-if cash_total == 5:
+if current_tool == 'teeth' and cash_total >= 5:
      phrase = input('Would you like to upgrade to some rusty scissors for $5?: ')
      if phrase == 'yes':
-         cash_total = 0
+         cash_total -= 5
          current_tool = 'rusty scissors'
-         print(f'Your cash total is ${cash_total}')
+         print(f'Your cash total is ${cash_total}')  
+
+while current_tool == 'rusty scissors' and cash_total < 25:
+    phrase = input('Did you cut grass today?: ').lower()
+    if phrase == 'yes' and cash_total < 25:
+        cash_total += 5
+        print(f'Your cash total is ${cash_total}')
+    if phrase == 'no' and cash_total < 25:
+        print(f'Your cash total is ${cash_total}')
     
     
 
