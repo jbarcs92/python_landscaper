@@ -11,6 +11,9 @@ while cash_total < 5:
         print(f'Your cash total is ${cash_total}')
     if phrase == 'no' and cash_total < 5:
         print(f'Your cash total is ${cash_total}')
+    if phrase == 'reset':
+        cash_total = 0
+        current_tool = 'teeth'
 
 if current_tool == 'teeth' and cash_total >= 5:
      phrase = input('Would you like to upgrade to some rusty scissors for $5?: ')
@@ -26,6 +29,9 @@ while current_tool == 'rusty scissors' and cash_total < 25:
         print(f'Your cash total is ${cash_total}')
     if phrase == 'no' and cash_total < 25:
         print(f'Your cash total is ${cash_total}')
+    if phrase == 'reset':
+        cash_total = 0
+        current_tool = 'teeth'
 
 if current_tool == 'rusty scissors' and cash_total >= 25:
      phrase = input('Would you like to upgrade to an old lawnmower for $25?: ')
@@ -41,6 +47,9 @@ while current_tool == 'old lawnmower' and cash_total < 250:
         print(f'Your cash total is ${cash_total}')
     if phrase == 'no' and cash_total < 250:
         print(f'Your cash total is ${cash_total}')
+    if phrase == 'reset':
+        cash_total = 0
+        current_tool = 'teeth'
 
 if current_tool == 'old lawnmower' and cash_total >= 250:
      phrase = input('Would you like to upgrade to battery-powered lawnmower for $250?: ')
@@ -56,6 +65,9 @@ while current_tool == 'battery-powered lawnmower' and cash_total < 500:
         print(f'Your cash total is ${cash_total}')
     if phrase == 'no' and cash_total < 500:
         print(f'Your cash total is ${cash_total}')
+    if phrase == 'reset':
+        cash_total = 0
+        current_tool = 'teeth'
 
 if current_tool == 'battery-powered lawnmower' and cash_total >= 500:
      phrase = input('Would you like to hire a team for $500?: ')
@@ -74,6 +86,9 @@ while current_tool == 'team':
     if cash_total >= 1000:
         print (f"Congrats! You've won the game")
         break
+    if phrase == 'reset':
+        cash_total = 0
+        current_tool = 'teeth'
 
 
     
