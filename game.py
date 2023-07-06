@@ -55,6 +55,13 @@ while current_tool == 'rusty scissors' and cash_total < 25:
         print(f'Your cash total is ${cash_total}')
     if phrase == 'no' and cash_total < 25:
         print(f'Your cash total is ${cash_total}')
+
+if current_tool == 'rusty scissors' and cash_total >= 25:
+     phrase = input('Would you like to upgrade to an old lawnmower for $25?: ')
+     if phrase == 'yes':
+         cash_total -= 25
+         current_tool = 'old lawnmower'
+         print(f'Your cash total is ${cash_total}') 
     
     
 
