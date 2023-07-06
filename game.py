@@ -20,7 +20,9 @@ if current_tool == 'teeth' and cash_total >= 5:
      if phrase == 'yes':
          cash_total -= 5
          current_tool = 'rusty scissors'
-         print(f'Your cash total is ${cash_total}')  
+         print(f'Your cash total is ${cash_total}')
+     if phrase == 'no':
+         quit
 
 while current_tool == 'rusty scissors' and cash_total < 25:
     phrase = input('Did you cut grass today?: ').lower()
