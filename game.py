@@ -92,6 +92,17 @@ if current_tool == 'battery-powered lawnmower' and cash_total >= 500:
          cash_total -= 500
          current_tool = 'team'
          print(f'Your cash total is ${cash_total}') 
+
+while current_tool == 'team':
+    phrase = input('Did you cut grass today?: ').lower()
+    if phrase == 'yes':
+        cash_total += 250
+        print(f'Your cash total is ${cash_total}')
+    if phrase == 'no':
+        print(f'Your cash total is ${cash_total}')
+    
+
+
     
     
 
