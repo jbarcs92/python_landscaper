@@ -41,12 +41,12 @@ while cash_total < 5:
     if phrase == 'no' and cash_total < 5:
         print(f'Your cash total is ${cash_total}')
 
-# if cash_total == 5:
-#      phrase = input('Would you like to upgrade to some rusty scissors for $5?: ')
-#      if phrase == 'yes':
-#          cash_total = 0
-#          current_tool = 'rusty scissors'
-#          print(f'Your cash total is ${cash_total}')
+if cash_total == 5:
+     phrase = input('Would you like to upgrade to some rusty scissors for $5?: ')
+     if phrase == 'yes':
+         cash_total = 0
+         current_tool = 'rusty scissors'
+         print(f'Your cash total is ${cash_total}')
     
     
 
